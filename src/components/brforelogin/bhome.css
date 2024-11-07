@@ -1,0 +1,107 @@
+/* BHome.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #E0F7FA; /* Light Cyan */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    width: 100%; /* Ensure the body is fully within the viewport */
+    box-sizing: border-box; /* Ensures padding and border do not affect the layout */
+  }
+  
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensures navbar starts from the left side */
+    width: 100%; /* Ensures the navbar spans the full width */
+    background-color: #00796B; /* Teal */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-sizing: border-box; /* Prevents padding from affecting the overall width */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    white-space: nowrap; /* Prevents the text from wrapping onto the next line */
+  }
+  
+  nav a:hover {
+    background-color: #004D40; /* Darker Teal for hover effect */
+  }
+  
+  .nav-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+    margin-top: 100px; /* To prevent content from hiding behind the navbar */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons .btn {
+    display: inline-block;
+    padding: 15px 35px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .buttons .btn:hover {
+    background-color: #ff4b47;
+    transform: scale(1.05);
+  }
+  
